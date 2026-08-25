@@ -1,0 +1,64 @@
+.nav {
+    display: flex;
+    background-color: aqua;
+    border-radius: 40px;
+    margin-right: 3%;
+    margin-left: 3%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+}
+
+.nav-text {
+    color: black;
+    font-size: larger;
+    text-decoration: none;
+    text-align: left;
+}
+
+.cv {
+    font-size: larger;
+    background-color: black;
+    text-decoration: none;
+    border-radius: 40px;
+    color: antiquewhite;
+}
+
+.work {
+    background-color: black;
+}
+
+.work1 {
+    background-color: antiquewhite;
+    border-radius: 15px;
+    margin: 3%;
+}
+
+.tecnologia {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.negro {
+    background-color: black;
+    color: azure;
+}
+
+h1 {
+    color: aliceblue;
+}
+
+.desing {
+    flex-direction: column;
+    animation: scrollLeft 32s linear infinite;
+}
+
+.desing-img {
+
+}
