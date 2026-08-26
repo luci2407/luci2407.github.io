@@ -1,3 +1,4 @@
+/* ---------- Nav ---------- */
 .nav {
     display: flex;
     background-color: aqua;
@@ -30,35 +31,181 @@
     color: antiquewhite;
 }
 
-.work {
-    background-color: black;
+/* ---------- Projects ---------- */
+
+.projects {
+  background-color: black;
+  border-radius: 20px 20px 0 0;
+  padding-top: 2%;
+  padding-bottom: 40px;
 }
 
-.work1 {
-    background-color: antiquewhite;
-    border-radius: 15px;
-    margin: 3%;
+#projects-title {
+    color: azure;
+    font-size: xx-large;
+    text-align: center;
 }
 
-.tecnologia {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
 }
 
 .negro {
     background-color: black;
     color: azure;
+    font-size: smaller;
+    font-weight: 600;
+    padding: 5px 12px;
+    list-style: none;
+    border-radius: 10px;
+    margin-top: 1%;
 }
 
-h1 {
+.blanco {
+    border: 2px solid #000000;
+    color: black;
+    font-size: smaller;
+    font-weight: 600;
+    padding: 5px 12px;
+    list-style: none;
+    border-radius: 10px;
+    margin-top: 1%;
+}
+
+
+.project1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background-color: gray;  
+  border-radius: 20px;
+  padding: 32px;
+  margin: 3%;
+}
+ 
+.project1-cont {
+  flex: 1;             
+  max-width: 55%; 
+  padding: 3%;      
+}
+ 
+.project-image {
+  flex-shrink: 0;       
+}
+ 
+.project-image img {
+  border-radius: 20px;
+  width: auto;
+  height: 300px;
+  display: block;
+}
+
+
+/* ---------- Desings ---------- */
+
+.design {
+  max-width: 1100px;   
+  margin: 0 auto;       
+  padding: 40px 24px;   
+  text-align: center;  
+}
+ 
+.design h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 6px;
+  text-align: center;
+}
+ 
+.design p {
+  font-size: 13px;
+  color: #bbbbbb;
+  margin: 0 0 28px;
+  text-align: center;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  animation: scroll-left 18s linear infinite;
+}
+ 
+.design-img {
+  height: 300px;
+  width: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+ 
+/* Como duplicamos las imágenes, mover exactamente el 50% del ancho
+   crea un loop perfecto y sin saltos */
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+ 
+@media (max-width: 560px) {
+  .design-img {
+    height: 120px;
+  }
+}
+
+
+/* ---------- About ---------- */
+ 
+.about {
+  background-color: #6a6a6a;
+  border-radius: 20px;
+  margin: 2% 6% 2% 6%;
+}
+ 
+.about-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 4% 8% 4% 8%;
+}
+
+.about-text {
+    padding-right: 20%;
+}
+
+.about-text h3 {
+  font-size: x-large;
+}
+ 
+.about-image {
+  flex-shrink: 0;
+  width: 280px;
+  height: 300px;
+  border-radius: 12px;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+    background-color: black;
+    border-radius: 20px 20px 0 0;
+    padding-top: 2%;
     color: aliceblue;
 }
 
-.desing {
-    flex-direction: column;
-    animation: scrollLeft 32s linear infinite;
+.work {
+    text-align: center;
 }
 
-.desing-img {
-
+.links a {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    color: aliceblue;
+    align-items: left;
 }
