@@ -1,12 +1,20 @@
 /* ---------- Nav ---------- */
 .nav {
-    display: flex;
-    background-color: aqua;
-    border-radius: 40px;
-    margin-right: 3%;
-    margin-left: 3%;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  background-color: gray;
+  border-radius: 40px;
+  margin-right: 3%;
+  margin-left: 3%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+}
+
+.logo {
+  color: black;
+  font-size: x-large;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .nav ul {
@@ -14,21 +22,57 @@
   align-items: center;
   gap: 28px;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;   
+  margin-right: 3%;  
 }
 
 .nav-text {
-    color: black;
-    font-size: larger;
-    text-decoration: none;
-    text-align: left;
+  color: black;
+  font-size: larger;
+  text-decoration: none;
+  text-align: left;
 }
 
 .cv {
-    font-size: larger;
-    background-color: black;
-    text-decoration: none;
-    border-radius: 40px;
-    color: antiquewhite;
+  background-color: black;
+  border-radius: 40px;
+  padding: 8px 20px;    
+}
+
+.cv a {
+  font-size: larger;
+  text-decoration: none;
+  color: white;          
+  display: block;
+}
+
+/* ---------- Hero --------*/
+.hero {
+  margin: 4% 10% 4% 10%;
+  display: flex;
+  align-items: center;
+}
+ 
+.hero-text {
+  flex: 1;
+}
+ 
+.quote {
+  font-size: x-large;
+  text-align: left;
+}
+ 
+.icon {
+  flex-shrink: 0;
+}
+ 
+.icon img {
+  border-radius: 20px;
+  width: auto;
+  height: 400px;
+  display: block;
 }
 
 /* ---------- Projects ---------- */
@@ -142,14 +186,12 @@
   flex-shrink: 0;
 }
  
-/* Como duplicamos las imágenes, mover exactamente el 50% del ancho
-   crea un loop perfecto y sin saltos */
 @keyframes scroll-left {
   from {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-50%);
+    transform: translateX(-20%);
   }
 }
  
@@ -192,20 +234,45 @@
 
 /* ---------- Footer ---------- */
 .footer {
-    background-color: black;
-    border-radius: 20px 20px 0 0;
-    padding-top: 2%;
-    color: aliceblue;
+  background-color: black;
+  border-radius: 20px 20px 0 0;
+  padding-top: 2%;
+  padding-bottom: 24px;
+  color: aliceblue;
 }
-
+ 
 .work {
-    text-align: center;
+  text-align: center;
 }
-
+ 
+/* Fila inferior: año a la izquierda, links a la derecha */
+.back {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  margin-top: 40px;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 13px;
+}
+ 
+.year {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 13px;
+}
+ 
+.links {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  list-style: none;
+}
+ 
 .links a {
-    display: flex;
-    gap: 10px;
-    list-style: none;
-    color: aliceblue;
-    align-items: left;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 13px;
 }
+ 
