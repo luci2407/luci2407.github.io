@@ -5,6 +5,7 @@
   border-radius: 40px;
   margin-right: 3%;
   margin-left: 3%;
+  margin-top: 3%;
   justify-content: space-between;
   align-items: center;
   padding: 12px 24px;
@@ -60,7 +61,7 @@
 }
  
 .quote {
-  font-size: x-large;
+  font-size: xx-large;
   text-align: left;
 }
  
@@ -158,14 +159,14 @@
 }
  
 .design h2 {
-  font-size: 20px;
+  font-size: xx-large;
   font-weight: 700;
   margin: 0 0 6px;
   text-align: center;
 }
  
 .design p {
-  font-size: 13px;
+  font-size: x-large;
   color: #bbbbbb;
   margin: 0 0 28px;
   text-align: center;
@@ -222,7 +223,7 @@
 }
 
 .about-text h3 {
-  font-size: x-large;
+  font-size: xx-large;
 }
  
 .about-image {
@@ -243,6 +244,11 @@
  
 .work {
   text-align: center;
+  font-size: x-large;
+}
+
+.email {
+  font-size: large;
 }
  
 /* Fila inferior: año a la izquierda, links a la derecha */
