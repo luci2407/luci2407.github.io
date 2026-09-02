@@ -13,6 +13,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 12px 24px;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -30,7 +31,8 @@ body {
   margin: 0;
   padding: 0;
   margin-left: auto;   
-  margin-right: 3%;  
+  margin-right: 3%;
+  flex-wrap: wrap;
 }
 
 .nav-text {
@@ -83,6 +85,7 @@ body {
   width: auto;
   height: 400px;
   display: block;
+  max-width: 100%;
 }
 
 /* ---------- Projects ---------- */
@@ -138,6 +141,7 @@ body {
   border-radius: 20px;
   padding: 32px;
   margin: 3%;
+  flex-wrap: wrap;
 }
  
 .project1-cont {
@@ -153,7 +157,8 @@ body {
 }
  
 .project-image {
-  flex-shrink: 0;       
+  flex-shrink: 0;
+  max-width: 100%;
 }
  
 .project-image img {
@@ -161,6 +166,7 @@ body {
   width: auto;
   height: 300px;
   display: block;
+  max-width: 100%;
 }
 
 
@@ -210,12 +216,6 @@ body {
     transform: translateX(-20%);
   }
 }
- 
-@media (max-width: 560px) {
-  .design-img {
-    height: 120px;
-  }
-}
 
 
 /* ---------- About ---------- */
@@ -231,6 +231,8 @@ body {
   align-items: center;
   gap: 24px;
   padding: 4% 8% 4% 8%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .about-text {
@@ -271,6 +273,8 @@ body {
   text-decoration: none;
   color: #FCF2F2;
   font-size: 13px;
+  flex-wrap: wrap;
+  gap: 12px;
 }
  
 .year {
@@ -284,6 +288,7 @@ body {
   gap: 10px;
   align-items: center;
   list-style: none;
+  flex-wrap: wrap;
 }
  
 .links a {
@@ -291,4 +296,159 @@ body {
   color: #FCF2F2;
   font-size: large;
 }
- 
+
+/* RESPONSIVE  */
+
+/* ---------- Tablets (<= 900px) ---------- */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    margin: 6% 6%;
+  }
+
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+
+  .quote {
+    text-align: center;
+  }
+
+  .icon {
+    margin-top: 24px;
+  }
+
+  .icon img {
+    height: 300px;
+  }
+
+  .project1 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project1-cont {
+    max-width: 100%;
+  }
+
+  .tags {
+    justify-content: center;
+  }
+
+  .project-image img {
+    height: 240px;
+  }
+
+  .about-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ---------- Mobile (<= 600px) ---------- */
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .nav ul {
+    margin: 0;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    font-size: large;
+  }
+
+  .nav-text {
+    font-size: medium;
+  }
+
+  .hero {
+    margin: 8% 5%;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .quote {
+    font-size: large;
+  }
+
+  .icon img {
+    height: 220px;
+  }
+
+  #projects-title {
+    font-size: large;
+  }
+
+  .project1 {
+    padding: 20px;
+    margin: 4%;
+  }
+
+  .project1-cont {
+    font-size: medium;
+    padding: 4% 0;
+  }
+
+  .project-image img {
+    height: 180px;
+  }
+
+  .design h2 {
+    font-size: large;
+  }
+
+  .design p {
+    font-size: medium;
+  }
+
+  .about-text h3 {
+    font-size: large;
+  }
+
+  .about-text {
+    font-size: medium;
+  }
+
+  .work {
+    font-size: large;
+  }
+
+  .back {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .links {
+    justify-content: center;
+  }
+}
+
+/* ---------- Small mobile (<= 380px) ---------- */
+@media (max-width: 380px) {
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .icon img {
+    height: 180px;
+  }
+
+  .project-image img {
+    height: 150px;
+  }
+
+  .design-img {
+    height: 120px;
+  }
+}
