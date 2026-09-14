@@ -1,0 +1,435 @@
+body{
+    background-color: whitesmoke;
+    margin-bottom: 0%;
+}
+
+
+  /* ---- NAV ---- */
+nav {
+  position: fixed;          /* Fija la barra */
+  top: 0;                   /* La coloca en la parte superior */
+  left: 0;                  /* Alineada al borde izquierdo */
+  width: 100%;              /* Que ocupe todo el ancho */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 92px;
+  border-top: 5px;
+  border-bottom: 5px;
+  margin: 0;                
+  padding: 0 2rem;
+  background-color: rgba(245, 245, 245, 0.497);  
+  z-index: 1000;        
+}
+ 
+  /* primer div: contiene el logo リア */
+  nav > div:first-child {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+  }
+ 
+  .icon {
+    font-size: 8rem;
+    font-weight: 400;
+    color: #e42d1c;
+    line-height: 0.7;
+    position: absolute;
+    left: 0;
+    white-space: nowrap;
+    z-index: 2;
+    writing-mode: vertical-rl;
+    top: 30%;
+    font-family: "Kaisei Tokumin", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+ 
+  /* segundo div: contiene la lista de links */
+  nav > div:last-child {
+    display: flex;
+    align-items: center;
+    margin-right: 8%;
+  }
+ 
+  .nav-list {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 2.6rem;
+  }
+ 
+  .nav-list li {
+    font-size: 1.15rem;
+    color: #111;
+    cursor: pointer;
+    font-family: "Shippori Antique", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+ 
+  .nav-list li:hover {
+    color: #d6493b;
+  }
+
+/* Hero */
+.hero-img {
+    width: 100%;
+    height: 370px; /* Cambia esta medida según lo que necesites */
+    object-fit: cover;
+    display: block;
+    margin-top: 6%;
+}
+
+.about-hero {
+    position: absolute; /* Saca el texto del flujo normal y lo sitúa encima */
+    top: 50%;          /* Centra verticalmente desde arriba */
+    left: 85%;         /* Centra horizontalmente desde la izquierda */
+    transform: translate(-50%, -50%); /* Ajusta el centro exacto del texto */
+    color: rgba(245, 245, 245, 0.666);      /* Color del texto */
+    font-size: 3rem;   /* Tamaño de fuente */
+    font-family: "Shippori Antique", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px 20px;
+}
+
+.about-text {
+    font-family: "Shippori Antique", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: right;
+    font-size: xx-large;
+    line-height: 30px;
+    margin-right: 3%;
+}
+
+.cv {
+    text-decoration: none;
+    color: inherit;
+    font-family: "Shippori Antique", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 3rem;
+    margin-left: 3%;
+}
+
+  /* ---- PROJECTS ---- */
+ .project {
+  /* Fondo semitransparente */
+    background-color: rgba(245, 245, 245, 0.3);
+
+    /* Blur al fondo */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    /* Detalles extra */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 1000;
+ }
+  /* el div que envuelve todo: es el "lienzo" relativo donde
+     posicionamos el fondo, el título y las tarjetas */
+  .project > div {
+    position: relative;
+    min-height: 560px;
+  }
+
+  
+  /* ---- Título "project */
+  .project h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #111;
+  }
+
+  #titlepro {
+    color: #111;
+    font-size: 3rem;
+    font-family: "Shippori Antique", sans-serif;
+    margin-left: 35%;
+    margin-top: 9%;
+  }
+ 
+  .project-title {
+    position: absolute;
+    top: -40px;
+    right: 3%;
+    z-index: 3;
+    font-family: "Kaisei Tokumin", serif;
+    font-weight: 400;
+    font-size: 9rem;
+    line-height: 1;
+    color: whitesmoke;
+  }
+ 
+  /* ---- Foto de fondo (pasto), empieza debajo del título ---- */
+  .project-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 700px; /* faltaba la unidad */
+  object-fit: cover;
+  z-index: 0;
+  border-radius: 2px;
+  filter: blur(2px);
+  opacity: 0.9;
+}
+ 
+  /* ---- Tarjetas de proyecto (img + h3 sueltos, sin wrapper) ---- */
+  .project-pic {
+    position: absolute;
+    width: 40%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    box-shadow: 0 10px 26px rgba(0,0,0,.3);
+    z-index: 1;
+  }
+ 
+  .project h3 {
+    position: absolute;
+    z-index: 2;
+    color: #000;
+    font-family: "Shippori Antique", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.15;
+  }
+ 
+#gear {
+    top: 250px;
+    left: 3%;
+}
+
+
+  .project h3:nth-of-type(1) {
+    top: 90%;
+    left: 7%;
+    text-align: left;
+  }
+ 
+  /* Tarjeta 2: Gear Sport (arriba-derecha) */
+  .project-pic:nth-of-type(2) {
+    top: 250px;
+    right: 3%;
+  }
+  .project h3:nth-of-type(2) {
+    top: 90%;
+    right: 7%;
+    text-align: right;
+  }
+ 
+  /* Tarjeta 3: Blog EBiDAN (centro, más abajo, encima de las otras) */
+  .project-pic:nth-of-type(3) {
+    top: 290px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+  .project h3:nth-of-type(3) {
+    top: 550px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    text-align: center;
+  }
+
+
+
+    /* ---- DESIGN ---- */
+  .design {
+    padding-top: 3%;
+  }
+ 
+  /* lienzo relativo: acá se posiciona todo lo demás */
+  .design > div {
+    position: relative;
+    min-height: 480px;
+    margin: 0 auto;
+  }
+ 
+  /* ---- Título "デザイン", */
+  .design h1 {
+    position: absolute;
+    top: 20px;
+    right: 3%;
+    z-index: 3;
+    font-family: "Shippori Antique", sans-serif;
+    font-weight: 400;
+    font-size: 9rem;
+    color: #111;
+  }
+ 
+  /* ---- Caption "My design background" ---- */
+  .design h2 {
+    position: absolute;
+    top: 105%;
+    left: 30%;
+    text-align: right;
+    z-index: 4;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 30px;
+    color: #111;
+    font-family: "Shippori Antique", sans-serif;
+  }
+ 
+  /* ---- Fotos (3 img sueltas, sin wrapper) ---- */
+  .design-pic {
+    position: absolute;
+    width: 230px;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    background: #fff;
+    border: 3px solid #111;
+    box-shadow: 0 10px 24px rgba(0,0,0,.18);
+  }
+ 
+  /* Foto 1: izquierda, la más alta, rotada hacia la izq. */
+  .design-pic:nth-of-type(1) {
+    top: 50%;
+    left: 25%;
+    transform: rotate(-8deg);
+    z-index: 1;
+  }
+ 
+  /* Foto 2: centro, más abajo, casi derecha, por encima de las otras */
+  .design-pic:nth-of-type(2) {
+    top: 70%;
+    left: 42%;
+    transform: rotate(3deg);
+    z-index: 2;
+  }
+ 
+  /* Foto 3: derecha, rotada hacia la der. */
+  .design-pic:nth-of-type(3) {
+    top: 60%;
+    right: 25%;
+    transform: rotate(8deg);
+    z-index: 1;
+  }
+
+
+
+  /* ---- ABOUT ---- */
+  .about {
+    padding-top: 18%;
+  }
+
+  .about > div {
+    position: relative;
+    min-height: 560px;
+  }
+ 
+  /* について< */
+  .about-title {
+    position: absolute;
+    align-items: center;
+    writing-mode: vertical-rl;
+    top: -40px;
+    left: 3%;
+    z-index: 3;
+    font-family: "Kaisei Tokumin", serif;
+    font-weight: 400;
+    font-size: 9rem;
+    line-height: 1;
+    color: white;
+  }
+
+  .about-p {
+    position: absolute;
+    align-items: center;
+    right: 3%;
+    left: 30%;
+    z-index: 3;
+    font-size: xx-large;
+    font-weight: 400;
+    color: white;
+    line-height: 30px;
+    top: 20%;
+    font-family: "Shippori Antique", sans-serif;
+    text-align: right;
+  }
+  
+
+   /* ---- Foto de fondo (pasto) ---- */
+  .about-pic {
+    backdrop-filter: blur(20%);
+    position: absolute;
+    width: 100%;
+    height: 500;
+    object-fit: cover;
+    z-index: 0;
+    border-radius: 2px;
+    filter: blur(3px);
+  }
+
+
+
+  /* ---- WORK ---- */
+  .work {
+    padding-top: 3%;
+  }
+
+  .work-title {
+    font-size: 5rem;
+    font-weight: 400;
+    color: #111;
+    line-height: 100px;
+    font-family: "Shippori Antique", sans-serif;
+    text-align: center;
+    margin-bottom: 0%;
+  }
+
+  .email {
+    font-size: xx-large;
+    font-weight: 400;
+    color: #111;
+    margin-top: 0%;
+    font-family: "Shippori Antique", sans-serif;
+    text-align: center;
+  }
+
+
+/* ----FOOTER --- */
+footer {
+    padding-top: 5%;       /* Reduce el espacio superior */
+    padding-bottom: 0;     /* Elimina espacio inferior */
+    margin: 0;             /* Asegura que no haya margen extra */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+    gap: 2.6rem;
+}
+
+.list li {
+    font-style: normal;
+    text-decoration: none;
+    color: inherit;
+    font-size: xx-large;
+    color: #111;
+    cursor: pointer;
+    font-family: "Shippori Antique", sans-serif;
+    font-weight: 400;
+} 
+
+.nav-list li:hover {
+    color: #d6493b;
+}
+
+.year {
+    font-family: "Kaisei Tokumin", serif;
+    font-weight: 400;
+    font-size: 4rem;
+}
