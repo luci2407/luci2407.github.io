@@ -84,8 +84,8 @@ nav {
 
 .about-hero {
     position: absolute; /* Saca el texto del flujo normal y lo sitúa encima */
-    top: 50%;          /* Centra verticalmente desde arriba */
-    left: 85%;         /* Centra horizontalmente desde la izquierda */
+    top: 55%;          /* Centra verticalmente desde arriba */
+    left: 88%;         /* Centra horizontalmente desde la izquierda */
     transform: translate(-50%, -50%); /* Ajusta el centro exacto del texto */
     color: rgba(245, 245, 245, 0.666);      /* Color del texto */
     font-size: 3rem;   /* Tamaño de fuente */
@@ -408,4 +408,92 @@ footer {
     font-family: "Kaisei Tokumin", serif;
     font-weight: 400;
     font-size: 4rem;
+}
+
+
+/* ---- MODAL PROYECTO ---- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+  z-index: 2000;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-box {
+  background: whitesmoke;
+  width: min(600px, 88%);
+  max-height: 80vh;
+  overflow-y: auto;
+  border-radius: 6px;
+  padding: 2rem;
+  position: relative;
+  box-shadow: 0 20px 50px rgba(0,0,0,.35);
+  transform: translateY(20px);
+  transition: transform 0.25s ease;
+  font-family: "Shippori Antique", sans-serif;
+}
+
+.modal-overlay.active .modal-box {
+  transform: translateY(0);
+}
+
+.modal-img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1.2rem;
+}
+
+.modal-title {
+  font-size: 2rem;
+  color: #111;
+  margin-bottom: 0.8rem;
+}
+
+.modal-desc {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 1.2rem;
+}
+
+.modal-link {
+  display: inline-block;
+  color: #d6493b;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 1px solid #d6493b;
+}
+
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  color: #111;
+}
+
+.modal-close:hover {
+  color: #d6493b;
+}
+
+/* también sirve para que las imágenes de proyecto muestren que son clickeables */
+.project-pic {
+  cursor: pointer;
 }

@@ -41,7 +41,7 @@
         <br>
         <span id="scramble2">people's lives simpler.</span>
         </p>
-        <h2><a class="cv" href="#contact">| CONTACT</a> <a class="cv" href="">/ CV*</a></h2>
+        <h2><a class="cv" href="#contact">| CONTACT</a> <a class="cv" href="CV.pdf" target="_blank">/ CV*</a></h2>
    </div>
 
    <!--PROJECTS-->
@@ -51,11 +51,23 @@
         <h1 class="project-title">プロジェクト</h1>
         <h2 id="titlepro">project</h2>
         
-        <img src="pic/Gear Sport.png" class="project-pic" alt="">
-        
-        <img src="pic/EBiDAN.png" class="project-pic" alt="">
+        <img src="pic/Gear Sport.png" class="project-pic" alt=""
+        data-title="Gear Sport"
+        data-desc="E-commerce homepage developed with HTML, CSS, and JavaScript."
+        data-img="pic/Gear Sport.png"
+        data-link="https://github.com/anthormarco/hakaton">
 
-        <img src="pic/zona huella.png" id="gear" class="project-pic" alt="">
+        <img src="pic/EBiDAN.png" class="project-pic" alt=""
+            data-title="Blog EBiDAN"
+            data-desc="Blog created with HTML and CSS."
+            data-img="pic/EBiDAN.png"
+            data-link="https://github.com/luci2407/EBiDAN-blog">
+
+        <img src="pic/zona huella.png" id="gear" class="project-pic" alt=""
+            data-title="Zona Huella"
+            data-desc="Responsive e-commerce website for a pet products store, developed with HTML, CSS, and JavaScript."
+            data-img="pic/zona huella.png"
+            data-link="https://github.com/PauBV-09/Zona-Huella-">
     </div>
    </section>
 
@@ -99,14 +111,25 @@
     <footer>
         <div>
             <ul class="list">
-                <li>Behance</li>
-                <a href=https://www.linkedin.com/in/lucila-romero-alonso/><li>LinkedIn</li></a>
-                <li>CV</li>
+                <a href=https://www.behance.net/lianal3 target="_blank"><li>Behance</li></a>
+                <a href=https://www.linkedin.com/in/lucila-romero-alonso/ target="_blank"><li>LinkedIn</li></a>
+                <a href="CV.pdf" target="_blank"><li>CV</li></a>
             </ul>
         </div>
 
         <h3 class="year">©2026</h3>
     </footer>
+
+<!-- MODAL PROYECTO -->
+<div id="project-modal" class="modal-overlay">
+    <div class="modal-box">
+        <button class="modal-close" id="modal-close">&times;</button>
+        <img id="modal-img" src="" alt="" class="modal-img">
+        <h3 id="modal-title" class="modal-title"></h3>
+        <p id="modal-desc" class="modal-desc"></p>
+        <a id="modal-link" href="#" target="_blank" class="modal-link">Ver más</a>
+    </div>
+</div>
 
 <script src="script.js"></script>
 </body>
