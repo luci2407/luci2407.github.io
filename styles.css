@@ -190,17 +190,7 @@ nav {
     box-shadow: 0 10px 26px rgba(0,0,0,.3);
     z-index: 1;
   }
- 
-  .project h3 {
-    position: absolute;
-    z-index: 2;
-    color: #000;
-    font-family: "Shippori Antique", sans-serif;
-    font-weight: 400;
-    font-size: 2rem;
-    font-weight: 600;
-    line-height: 1.15;
-  }
+
  
 #gear {
     top: 250px;
@@ -219,11 +209,6 @@ nav {
     top: 250px;
     right: 3%;
   }
-  .project h3:nth-of-type(2) {
-    top: 90%;
-    right: 7%;
-    text-align: right;
-  }
  
   /* Tarjeta 3: Blog EBiDAN (centro, más abajo, encima de las otras) */
   .project-pic:nth-of-type(3) {
@@ -232,15 +217,6 @@ nav {
     transform: translateX(-50%);
     z-index: 2;
   }
-  .project h3:nth-of-type(3) {
-    top: 550px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 3;
-    text-align: center;
-  }
-
-
 
     /* ---- DESIGN ---- */
   .design {
